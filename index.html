@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>404 - Page Not Found</title>
+    <meta name="keywords" content="Broken Your Site">
+    <meta property="og:image" content="https://i.pinimg.com/564x/2f/a0/e6/2fa0e69986f935c09c59b408990a0086.jpg">
+    <link rel="icon" type="image/png" href="https://i.pinimg.com/564x/2f/a0/e6/2fa0e69986f935c09c59b408990a0086.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <style>
+        /* Style the video: 100% width and height to cover the entire window */
+        #deinismeV {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1; /* Pastikan video di belakang elemen lain */
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            cursor: url('https://pusaka.denpasarkota.go.id/files/images/1689304622_UMKM%20DPS%20EXPO.png'), auto; /* Custom cursor */
+        }
+
+        #notfound {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .notfound {
+            max-width: 767px;
+            width: 100%;
+            line-height: 1.4;
+            text-align: center;
+            position: relative;
+            animation: float 3s ease-in-out infinite; /* Animasi floating */
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        .notfound .notfound-404 {
+            position: relative;
+            height: 180px;
+            margin-bottom: 20px;
+        }
+
+        .notfound .notfound-404 h1 {
+            font-family: 'Montserrat', sans-serif;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 224px;
+            font-weight: 1000;
+            margin: 0;
+            color: #030005;
+            text-transform: uppercase;
+            text-shadow: -1px -1px 0px #8400ff, 1px 1px 0px #ff005a;
+            letter-spacing: -20px;
+        }
+
+        .notfound .notfound-404 h2 {
+            font-family: 'Montserrat', sans-serif;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 110px;
+            font-size: 32px; /* Ukuran font diperkecil */
+            font-weight: 700;
+            color: #fff;
+            text-transform: uppercase;
+            text-shadow: 0px 2px 0px #8400ff;
+            letter-spacing: 13px;
+            margin: 0;
+        }
+
+        .notfound .notfound-404 h3 {
+            font-family: 'VT323', sans-serif;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 175px;
+            font-size: 25px;
+            font-weight: 550;
+            color: #fff;
+            text-transform: uppercase;
+            text-shadow: 0px 2px 0px #8400ff;
+            letter-spacing: 10px;
+            margin: 0;
+        }
+
+        .notfound a button, .notfound button {
+            font-family: 'VT323', sans-serif;
+            display: inline-block;
+            text-transform: uppercase;
+            color: #ffff;
+            text-decoration: none;
+            border: 2px solid;
+            background: #000000;
+            padding: 10px 20px; /* Padding disesuaikan */
+            font-size: 15px;
+            font-weight: 700;
+            box-shadow: -1px -1px 0px #8400ff, 1px 1px 0px #ff005a;
+            text-shadow: 0px 2px 0px #8400ff;
+            transition: background 0.3s ease, color 0.3s ease; /* Efek hover */
+            border-radius: 50px; /* Membuat tombol bulat */
+        }
+
+        .notfound a button:hover, .notfound button:hover {
+            background: #8400ff;
+            color: #000;
+        }
+
+        footer {
+            font-family: 'VT323', monospace;
+            color: #fefbec;
+            text-transform: uppercase;
+            text-shadow: 0px 2px 0px #8400ff;
+            letter-spacing: 2px;
+            margin-top: 40px; /* Geser copyright ke bawah */
+        }
+
+        #randomQuote {
+            font-family: 'VT323', monospace;
+            color: #fff;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+
+        #themeToggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            font-family: 'VT323', monospace;
+            background: #000;
+            color: #fff;
+            border: 2px solid #8400ff;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 50px; /* Membuat tombol bulat */
+        }
+
+        .dark-mode {
+            background: #000;
+            color: #fff;
+        }
+
+        .dark-mode .notfound .notfound-404 h1 {
+            color: #fff;
+        }
+
+        .dark-mode .notfound .notfound-404 h2,
+        .dark-mode .notfound .notfound-404 h3 {
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <video autoplay muted loop id="deinismeV">
+        <source src="https://v1.pinimg.com/videos/mc/720p/80/97/a1/8097a1af879adfd659c230df90f1a765.mp4" type="video/mp4">
+    </video>
+    <div id="notfound">
+        <div class="notfound">
+            <div class="notfound-404">
+                <h1>404</h1>
+                <h2>Fixed your bug</h2> <!-- Tulisan "Fixed your bug" diperkecil -->
+                <h3>- Deinisme -</h3>
+            </div>
+            <br>
+            <a href="mailto:iamgoat666@protonmail.com">
+                <button>Contact Me</button>
+            </a>
+            <br><br>
+            <audio id="lagu" loop autoplay>
+                <source src="https://c.top4top.io/m_27825gl2h0.mp3">
+            </audio>
+            <button onclick="document.getElementById('lagu').play()">PLAY MUSIC</button>
+            <button onclick="document.getElementById('lagu').pause()">PAUSE MUSIC</button>
+            <br><br>
+            <p id="randomQuote"></p> <!-- Pesan acak -->
+            <footer>
+                &copy; Deinisme Security <script>document.write(new Date().getFullYear())</script>
+            </footer>
+        </div>
+    </div>
+    <button id="themeToggle">Toggle Dark Mode</button> <!-- Tombol dark mode -->
+    <script>
+        // Random quotes
+        const quotes = [
+            "Jangan menyerah!",
+            "Setiap bug adalah pelajaran baru.",
+            "404 bukan akhir, coba lagi!",
+            "Tetap semangat!",
+            "Anda bisa memperbaikinya!"
+        ];
+        const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+        document.getElementById("randomQuote").textContent = randomQuote;
+
+        // Dark mode toggle
+        const themeToggle = document.getElementById("themeToggle");
+        themeToggle.addEventListener("click", function() {
+            document.body.classList.toggle("dark-mode");
+        });
+    </script>
+</body>
+</html>
